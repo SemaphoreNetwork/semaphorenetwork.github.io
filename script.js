@@ -447,7 +447,7 @@ class Slider {
   listeners() {
     window.addEventListener('wheel', this.nextSlide, { passive: true });
     window.addEventListener('scroll', this.nextSlide, { passive: true });
-    window.addEventListener('touchmove', this.nextSlide, { passive: true });
+    window.addEventListener('touch', this.nextSlide, { passive: true });
 
 
   }
@@ -540,6 +540,9 @@ class Slider {
       await this.sleep();
       document.getElementsByClassName("movable_tagline")[0].innerText = tag;
     }
+
+    document.getElementsByClassName("movable_tagline")[0].innerText = taglines[0];
+
   }
     
     

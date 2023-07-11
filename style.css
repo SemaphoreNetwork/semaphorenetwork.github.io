@@ -37,9 +37,9 @@ a {
 .logo {
   position: absolute;
   top: -1rem;
-  left: 50%;
+  left: 8%;
   transform: translateX(-50%);
-  padding: 0;
+  padding: 10;
   margin: 0;
   z-index: 10;
 }
@@ -180,7 +180,7 @@ ul, li {
 
 .slider__text__top {
   text-align: center;
-  position: absolute;
+  /* position: absolute; */
   top: calc(2rem + 4vw);
   left: calc(2rem + 3vw);
   z-index: 10;
@@ -191,7 +191,7 @@ ul, li {
   color: #e0f800;
   font-weight: 500;
   background-color: #313131;
-  opacity: 0.9
+  opacity: 0.98
 
 
 }
@@ -288,8 +288,7 @@ ul, li {
   left: 0;
   right:0;
   top: 0;
-  width:50%;
-  height: 50%;
+  width:75%;
   -o-object-fit: cover;
      object-fit: cover;
      
@@ -297,7 +296,7 @@ ul, li {
   transition: 0.3s;
   border-radius: 5px; /* 5px rounded corners */
   background-color: #fff;
-  opacity: 0.9
+  opacity: 0.98
 }
 
 .cardcontainer {
@@ -306,6 +305,8 @@ ul, li {
   font-family: "helvetica neue", helvetica, sans-serif;
   font-size: calc(0.5rem + 1vw);
   text-transform: capitalize;
+  width: 100%;
+  height:auto;
 }
 
 .cc_p {
@@ -317,5 +318,13 @@ ul, li {
 }
 .black_bg{
   background-color: #313131;
-  overflow: hidden;
+  /* overflow: hidden; */
+}
+.black_bg_lite{
+  background-color: #6f6f6f;
+
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: #3b3db9 !important;
 }

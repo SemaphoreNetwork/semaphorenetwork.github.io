@@ -447,7 +447,7 @@ class Slider {
   listeners() {
     window.addEventListener('wheel', this.nextSlide, { passive: true });
     window.addEventListener('scroll', this.nextSlide, { passive: true });
-    window.addEventListener('touch', this.nextSlide, { passive: true });
+    window.addEventListener('touchmove', this.nextSlide, { passive: true });
 
 
   }
@@ -525,14 +525,14 @@ class Slider {
     const taglines = [
       "Universal Basic Internet",
       "DAO-based Internet", 
-      "Hardware Wallet Security",
+      "Hardware Wallet Identity",
       "DePIN On Ethereum",
       "Worldwide Availability",
 
       
     ]
     document.getElementsByTagName("html")[0].style.visibility = "visible";
-    document.getElementsByClassName("vert-text")[0].style.visibility = "hidden";
+    document.getElementsByClassName("vert-text")[0].style.visibility = "visible";
 
     document.getElementsByClassName("movable_tagline")[0].style.visibility = "visible"
 

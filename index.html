@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" >
-  <script src='//cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<html lang="en">
+<script src='//cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
 <head>
   <meta charset="UTF-8">
   <title>Semaphore Network - EVM-based Internet</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css">
 
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<script id="vertexShader" type="x-shader/x-vertex">
+  <!-- partial:index.partial.html -->
+  <script id="vertexShader" type="x-shader/x-vertex">
   //
   // GLSL textureless classic 3D noise "cnoise",
   // with an RSL-style periodic variant "pnoise".
@@ -243,7 +248,7 @@
   
   
 </script>
-<script id="fragmentShader" type="x-shader/x-vertex">
+  <script id="fragmentShader" type="x-shader/x-vertex">
   varying float qnoise;
   
   uniform float time;
@@ -263,8 +268,8 @@
   }
 </script>
 
-<nav class="nav nav--left js-nav">
-  <!-- <ul>
+  <nav class="nav nav--left js-nav">
+    <!-- <ul>
     <li>
       logo
     </li>
@@ -275,155 +280,166 @@
       <a href="#" class="is-active"><span></span></a>
     </li>
   </ul> -->
-  
-  
-</nav>
-
-<figure class="logo ">
-  <img src="./logo_g.png">
-</figure>
-
-<nav class="nav nav--right">
-  <ul>
-    <li>
-      <a href="#" target="_blank"><span>Docs</span></a>
-    </li>
-    <li>
-      <a href="#" target="_blank"><span>Wallet</span></a>
-    </li>
-    <li>
-      <a href="#" target="_blank"><span>DApp</span></a>
-    </li>
-  </ul>
-</nav>
-
-<div class="slider js-slider">
-  <div class="slider__inner js-slider__inner"></div>
-  <div class="slide js-slide">
-    <div class="slide__content">
-      
-      <figure class="slide__text js-slider__text">
-        <!-- <div class="slider__text-line js-slider__text-line"><div>Semaphore Network</div></div>     -->
-      </figure>
-       
-      
-      <figure class="slide__img js-slide__img">
-        <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo2.jpg"> -->
-      </figure>
-    </div>
-    
-    <div class="slider__text__mid js-slider__text black_bg text_box">
-      <div class="slider__text-line js-slider__text-line top_tagline "><div>A Network For</div></div>
-      <div class="slider__text-line  js-slider__text-line movable_tagline"><div>Universal Basic Internet</div></div>
-      <div class="slider__text-line js-slider__text-line"><div></div></div>
-      <div class="slider__text-line js-slider__text-line"><div></div></div>
-    </div>
 
 
-    
-  </div>
-  
-  <div class="slide js-slide">
-    <div class="slide__content container">
-      <div class="slider__text slider__text__top justify-content-center flex-nowrap">
-        <!-- animated <div class="slider__text-line js-slider__text-line"><div>Take The Yellow Pill Anon.</div> -->
-        <div class="slider__text-line "><div>Take The Yellow Pill Anon.</div>
-        <br/>
-        <div class="row">
-        <div class="card col-md">
-          <!-- <img src="img_avatar.png" alt="Avatar" style="width:100%"> -->
-          <div class="cardcontainer">
-            <div class="black_bg_lite">
-            <h3><b>Host The Network</b></h3>
-            </div>
-            <div class="cc_p">
-           Deploy FOSS infrastructure in your local community, or the wild!
-                Get Rewarded By the DAO
-  
-            </div>
-            
-            <img src="./sl_antennasite_scaled.jpeg" alt="Avatar" style="width:90%">
-            <button type="button" class="btn btn-secondary btn-lg" >Learn More</button>
-            <button type="button" class="btn btn-primary btn-lg">Host DApp</button>
-          </div>
-        </div>
-
-        <div class="card col-md">
-          <!-- <img src="img_avatar.png" alt="Avatar" style="width:100%"> -->
-          <div class="cardcontainer">
-            <div class="black_bg_lite">
-            <h3><b>Use The Network</b></h3>
-            </div>
-            <div class="cc_p">
-              Use Our Network's cellular and WiFi service on 
-              almost any phone or laptop; anywhere the DAO is. 
-            </div>
-            <img src="./phone_user_scaled.jpeg" alt="Avatar" style="width:90%">
-
-            <button type="button" class="btn btn-secondary btn-lg" >Learn More</button>
-            <button type="button" class="btn btn-primary btn-lg">User DApp</button>
-
-          </div>
-        </div>
-        </div>
-        <br/>
-      </div>
-
-
-        
-      </div>
-      <!-- <figure class="slide__img js-slide__img"> -->
-        <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo3.jpg"> -->
-      
-        
-      <!-- </figure> -->
-       <figure class="slide__img js-slide__img">
-        <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo4.jpg"> -->
-      </figure>
-    </div>
-  </div>
-  
-  <div class="slide js-slide">
-    <div class="slide__content">
-      <figure class="slide__img js-slide__img">
-        <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo5.jpg"> -->
-        Use The ETHSim Wallet
-      </figure>
-       <figure class="slide__img js-slide__img">
-        Learn More
-        <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo6.jpg"> -->
-      </figure>
-    </div>
-  </div>
-  
-  <nav class="slider__nav js-slider__nav">
-    <div class="slider-bullet js-slider-bullet">
-      <span class="slider-bullet__text js-slider-bullet__text">01</span>
-      <span class="slider-bullet__line js-slider-bullet__line"></span>
-    </div>
-     <div class="slider-bullet js-slider-bullet">
-      <span class="slider-bullet__text js-slider-bullet__text">02</span>
-      <span class="slider-bullet__line js-slider-bullet__line"></span>
-    </div>
-     <div class="slider-bullet js-slider-bullet">
-      <span class="slider-bullet__text js-slider-bullet__text">03</span>
-      <span class="slider-bullet__line js-slider-bullet__line"></span>
-    </div>
   </nav>
-  
-  <div class="scroll js-scroll">Scroll To Join</div>
-  
-</div>
 
-<div class="vert-text">
-  <span>
-    Semaphore<br>
-    Network
-  </span>
-</div>
-<!-- partial -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/99/three.min.js'></script>
-<script  src="./script.js"></script>
+  <figure class="logo ">
+    <img src="./logo_g.png">
+  </figure>
+
+  <nav class="nav nav--right">
+    <ul>
+      <li>
+        <a href="#" target="_blank"><span>Docs</span></a>
+      </li>
+      <li>
+        <a href="#" target="_blank"><span>Wallet</span></a>
+      </li>
+      <li>
+        <a href="#" target="_blank"><span>DApp</span></a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="slider js-slider">
+    <div class="slider__inner js-slider__inner">
+
+      <div class="slide js-slide">
+
+        <div class="d-flex flex-row justify-content-center">
+
+
+          <!-- <figure class="slide__text js-slider__text column">
+            <div class="slider__text-line js-slider__text-line"><div>Semaphore Network</div></div>    
+
+          </figure> -->
+
+
+
+
+
+          <div class="slider__text__mid js-slider__text black_bg text_box row">
+            <div class="slider__text-line js-slider__text-line flex-row justify-content-center top_tagline ">
+              <div>A Network For</div>
+            </div>
+          
+            <div class="slider__text-line  js-slider__text-line flex-row justify-content-center movable_tagline">
+              <div>Universal Basic Internet</div>
+            </div>
+          </div>
+            <!-- <div class="slider__text-line js-slider__text-line"><div></div></div> -->
+            <!-- <div class="slider__text-line js-slider__text-line"><div></div></div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="slide js-slide d-flex flex-row justify-content-center">
+        <div class="slide__content d-flex flex-row justify-content-center">
+          <div class="slider__text slider__text__top justify-content-center flex-nowrap">
+            <!-- animated <div class="slider__text-line js-slider__text-line"><div>Take The Yellow Pill Anon.</div> -->
+            <div class="slider__text-line d-flex flex-row justify-content-center">
+              <div>Take The Yellow Pill Anon.</div>
+
+            </div>
+            <br />
+            <div class="d-flex flex-row justify-content-center">
+
+              <div class="card col-md">
+                <!-- <img src="img_avatar.png" alt="Avatar" style="width:100%"> -->
+                <div class="cardcontainer">
+                  <div class="black_bg_lite">
+                    <h3><b>Host The Network</b></h3>
+                  </div>
+                  <div class="cc_p">
+                    Deploy FOSS infrastructure in your local community, or the wild!
+                    Get Rewarded By the DAO
+
+                  </div>
+
+                  <img src="./sl_antennasite_scaled.jpeg" alt="Avatar" style="width:90%">
+                  <button type="button" class="btn btn-secondary btn-lg">Learn More</button>
+                  <button type="button" class="btn btn-primary btn-lg">Host DApp</button>
+                </div>
+              </div>
+
+              <div class="card col-md">
+                <!-- <img src="img_avatar.png" alt="Avatar" style="width:100%"> -->
+                <div class="cardcontainer">
+                  <div class="black_bg_lite">
+                    <h3><b>Use The Network</b></h3>
+                  </div>
+                  <div class="cc_p">
+                    Use Our Network's cellular and WiFi service on
+                    almost any phone or laptop; anywhere the DAO is.
+                  </div>
+                  <img src="./phone_user_scaled.jpeg" alt="Avatar" style="width:90%">
+
+                  <button type="button" class="btn btn-secondary btn-lg">Learn More</button>
+                  <button type="button" class="btn btn-primary btn-lg">User DApp</button>
+
+                </div>
+              </div>
+            </div>
+            <br />
+          </div>
+
+
+
+        </div>
+        <!-- <figure class="slide__img js-slide__img"> -->
+        <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo3.jpg"> -->
+
+
+        <!-- </figure> -->
+        <figure class="slide__img js-slide__img">
+          <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo4.jpg"> -->
+        </figure>
+      </div>
+    </div>
+
+    <div class="slide js-slide">
+      <div class="slide__content">
+        <figure class="slide__img js-slide__img">
+          <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo5.jpg"> -->
+          Use The ETHSim Wallet
+        </figure>
+        <figure class="slide__img js-slide__img">
+          Learn More
+          <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo6.jpg"> -->
+        </figure>
+      </div>
+    </div>
+
+    <nav class="slider__nav js-slider__nav">
+      <div class="slider-bullet js-slider-bullet">
+        <span class="slider-bullet__text js-slider-bullet__text">01</span>
+        <span class="slider-bullet__line js-slider-bullet__line"></span>
+      </div>
+      <div class="slider-bullet js-slider-bullet">
+        <span class="slider-bullet__text js-slider-bullet__text">02</span>
+        <span class="slider-bullet__line js-slider-bullet__line"></span>
+      </div>
+      <div class="slider-bullet js-slider-bullet">
+        <span class="slider-bullet__text js-slider-bullet__text">03</span>
+        <span class="slider-bullet__line js-slider-bullet__line"></span>
+      </div>
+    </nav>
+
+    <div class="scroll js-scroll">Scroll To Join</div>
+
+  </div>
+
+  <div class="vert-text">
+    <span>
+      Semaphore<br>
+      Network
+    </span>
+  </div>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/99/three.min.js'></script>
+  <script src="./script.js"></script>
 
 </body>
+
 </html>

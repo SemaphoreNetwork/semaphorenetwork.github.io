@@ -67,7 +67,7 @@ ul, li {
 .nav--right {
   right: 1rem;
   padding: 5px;
-  background-color: #6f6f6f;
+  /* background-color: #6f6f6f; */
   opacity: .9;
   border-radius: 5%;
   text-align: center;

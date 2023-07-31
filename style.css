@@ -178,6 +178,7 @@ ul, li {
   text-transform: uppercase;
   transform-origin: top;
   line-height: 1.075;
+  text-align: center;
   color: #e0f800;
   font-weight: 500;
 

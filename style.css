@@ -172,12 +172,13 @@ ul, li {
 .slider__text__mid {
   position: absolute;
   top: calc(2rem + 25vw);
-  left: calc(1rem + 27vw);
+  /* left: calc(1rem + 27vw); */
   z-index: 10;
   font-size: calc(1rem + 3vw);
   text-transform: uppercase;
   transform-origin: top;
   line-height: 1.075;
+  text-align: center;
   color: #e0f800;
   font-weight: 500;
 
@@ -212,7 +213,7 @@ ul, li {
 
 .slider__text-line {
   overflow: hidden;
-  width: 80%;
+  width: auto;
   
 }
 .slider__inner {
@@ -336,9 +337,17 @@ ul, li {
   visibility: hidden;
   top:50%;
   font-weight: bold;
+  text-align: center;
+}
+.movable_tagline::before{
+  content: '\A';
+  display:block
+
 }
 .top_tagline{
   font-weight: 100;
+  display:block
+
 }
 .black_bg{
   background-color: #313131;
@@ -355,10 +364,10 @@ ul, li {
   background-color: #4c4fda !important;
 }
 .text_box{
-  margin:auto;
+  margin:2;
   background-color: #313131;
-  height:20%;
-  width: 50%;
+  /* height:20%;
+  width: 50%; */
   text-align: center;
-  top: 30%;
+  /* top: 30; */
 }

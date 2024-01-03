@@ -23,6 +23,11 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: none;
+  color:#dff80064;
+}
+
 .scroll {
   position: absolute;
   bottom: 2rem;
@@ -99,9 +104,9 @@ ul, li {
 }
 .nav a span:before {
   content: "";
-  position: absolute;
+  position: relative;
   left: 0;
-  bottom: -0.35rem;
+  /* bottom: -0.35rem; */
   width: 100%;
   height: 1px;
   background-color: rgba(255, 255, 255, 0.25);

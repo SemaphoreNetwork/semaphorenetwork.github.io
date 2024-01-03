@@ -1,9 +1,7 @@
-const speedRandom = Math.random(10) / 10000;
-
 let options = {
   perlin: {
     vel: 0.002,
-    speed: 0.00004,
+    speed: 0.00002,
     perlins: 1.0,
     decay: 0.40,
     complex: 0.0,
@@ -143,17 +141,17 @@ class Slider {
     this.scene = null;
     this.clock = null;
     this.camera = null;
+    // this.images = [
+    // 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/bg1.jpg',
+    // 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/bg2.jpg',
+    // 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/bg3.jpg'];
 
-    this.images = [
-    'https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/bg1.jpg',
-    'https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/bg2.jpg',
-    'https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/bg3.jpg'];
 
 
     this.data = {
       current: 0,
       next: 1,
-      total: this.images.length - 1,
+      total: 1,
       delta: 0 };
 
 
@@ -230,6 +228,7 @@ class Slider {
     this.renderer.setSize(this.el.offsetWidth, this.el.offsetHeight);
 
     this.inner.appendChild(this.renderer.domElement);
+    
   }
 
   loadTextures() {
@@ -237,25 +236,23 @@ class Slider {
     loader.crossOrigin = '';
 
     this.textures = [];
-    this.images.forEach((image, index) => {
-      const texture = loader.load(image + '?v=' + Date.now(), this.render);
+    // this.images.forEach((image, index) => {
+    //   const texture = loader.load(image + '?v=' + Date.now(), this.render);
 
-      texture.minFilter = THREE.LinearFilter;
-      texture.generateMipmaps = false;
+    //   texture.minFilter = THREE.LinearFilter;
+    //   texture.generateMipmaps = false;
 
-      if (index === 0 && this.mat) {
-        this.mat.uniforms.size.value = [
-        texture.image.naturalWidth,
-        texture.image.naturalHeight];
+    //   if (index === 0 && this.mat) {
+    //     this.mat.uniforms.size.value = [
+    //     texture.image.naturalWidth,
+    //     texture.image.naturalHeight];
 
-      }
+    //   }
 
-      this.textures.push(texture);
-    });
+    //   this.textures.push(texture);
+    // });
 
-    this.disp = loader.load('https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/rock-_disp.png', this.render);
-    this.disp.magFilter = this.disp.minFilter = THREE.LinearFilter;
-    this.disp.wrapS = this.disp.wrapT = THREE.RepeatWrapping;
+
   }
 
   createMesh() {
@@ -267,18 +264,18 @@ class Slider {
         size: { value: new THREE.Vector2(1, 1) },
         texture1: { type: 't', value: this.textures[0] },
         texture2: { type: 't', value: this.textures[1] },
-        disp: { type: 't', value: this.disp } },
+        // disp: { type: 't', value: this.disp } 
+      },
 
-      transparent: true,
+      // transparent: true,
       vertexShader: this.vert,
       fragmentShader: this.frag });
 
 
-    const geometry = new THREE.PlaneBufferGeometry(
-    this.el.offsetWidth,
-    this.el.offsetHeight,
-    1);
-
+    const geometry = new THREE.PlaneGeometry(
+    // this.el.offsetWidth,
+    // this.el.offsetHeight,
+    3);
 
     const mesh = new THREE.Mesh(geometry, this.mat);
 
@@ -494,13 +491,12 @@ class Slider {
   
 
   animation() {
-    requestAnimationFrame(this.animation.bind(this));
     
-    var time = Date.now() * 0.003;
+    this.render();
     
     TweenMax.to(this.camera.position, 1, {z:options.cam.zoom+5});
     
-    this.flowerMesh.rotation.y -= 0.001;
+    this.flowerMesh.rotation.y -= 0.0000000000000000000000000000000000000001;
     this.flowerMat.uniforms['time'].value = options.perlin.speed * (Date.now() - this.start );
     this.flowerMat.uniforms['pointscale'].value = options.perlin.perlins;
     this.flowerMat.uniforms['decay'].value = options.perlin.decay;
@@ -512,7 +508,8 @@ class Slider {
     this.flowerMat.uniforms['b_color'].value = options.rgb.b_color;
     this.flowerMat.uniforms['fragment'] = options.perlin.fragment;
     //---
-    this.render();
+    requestAnimationFrame(this.animation.bind(this));
+
   }
 
 
@@ -547,22 +544,20 @@ class Slider {
     
     
 
-  async init() {
+  init() {
+    this.setStyles();
     this.setup();
     this.cameraSetup();
     this.createLights();
     this.loadTextures();
     this.createMesh();
     
-    this.createFlower();
-    this.setStyles();
+    this.createFlower()
     // this.render();
     this.createGUI();
-    this.animation();
     this.listeners();
-
-    await this.revealPage();
-
+    this.revealPage();
+    this.animation();
 
   }}
 

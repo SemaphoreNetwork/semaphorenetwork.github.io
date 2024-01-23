@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @layer utilities {
+  .h1 {
+    font-size: ;
+  }
+} */
+
 body {
   background-color: #17151E;
   margin: 0;

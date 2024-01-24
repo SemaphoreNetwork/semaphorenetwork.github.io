@@ -4,8 +4,10 @@ import logo from 'assets/images/logo.svg';
 
 export default function Header(): JSX.Element {
   return (
-    <div className='flex h-[120px] items-center justify-between px-4 md:px-16'>
-      <img alt='Logo' src={logo} />
+    <div className='flex gap-6 h-[120px] items-center justify-between px-4 md:px-16'>
+      <div>
+        <img alt='Logo' src={logo} />
+      </div>
       <div className='flex gap-4 shrink-0'>
         <a href='https://discord.com' rel='noreferrer' target='_blank'>
           <img alt='Discord' src={discord} />

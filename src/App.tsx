@@ -37,23 +37,23 @@ const BULLET_POINTS = [
 const FAQS = [
   {
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lectus est, pretium sit amet condimentum eu, egestas eget tellus. Nulla facilisi. Aliquam euismod mauris non dui sagittis viverra. Nunc feugiat pellentesque viverra. Vestibulum sollicitudin pulvinar tempus. Etiam id viverra velit. Vivamus vel pharetra neque, et accumsan massa. Phasellus eu molestie ligula. Vestibulum velit est, vestibulum vitae egestas a, ullamcorper rutrum est. Vestibulum laoreet suscipit ex, nec finibus risus sollicitudin et. Aenean varius erat quis nibh fermentum aliquet. Phasellus ultrices, nisl eget porttitor malesuada, enim lorem commodo massa, at vehicula nisl eros sit amet augue. Sed sagittis tincidunt magna, et fermentum ante consectetur quis. Etiam a elit urna. Nulla tincidunt vehicula laoreet. Quisque finibus eleifend sem, ut dictum lorem feugiat at.',
-    question: 'Do I get any incentive to run a hot spot?',
+      'No.',
+    question: 'Does this involve a token?',
   },
   {
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lectus est, pretium sit amet condimentum eu, egestas eget tellus. Nulla facilisi. Aliquam euismod mauris non dui sagittis viverra. Nunc feugiat pellentesque viverra. Vestibulum sollicitudin pulvinar tempus. Etiam id viverra velit. Vivamus vel pharetra neque, et accumsan massa. Phasellus eu molestie ligula. Vestibulum velit est, vestibulum vitae egestas a, ullamcorper rutrum est. Vestibulum laoreet suscipit ex, nec finibus risus sollicitudin et. Aenean varius erat quis nibh fermentum aliquet. Phasellus ultrices, nisl eget porttitor malesuada, enim lorem commodo massa, at vehicula nisl eros sit amet augue. Sed sagittis tincidunt magna, et fermentum ante consectetur quis. Etiam a elit urna. Nulla tincidunt vehicula laoreet. Quisque finibus eleifend sem, ut dictum lorem feugiat at.',
-    question: 'Do I get any incentive to run a hot spot?',
+      'We are currently preparing trial runs. At this early stage, we plan to sponsor most of the costs. If you have identified a suitable location for the trial, please contact us.',
+    question: 'What does this cost for a user?',
   },
   {
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lectus est, pretium sit amet condimentum eu, egestas eget tellus. Nulla facilisi. Aliquam euismod mauris non dui sagittis viverra. Nunc feugiat pellentesque viverra. Vestibulum sollicitudin pulvinar tempus. Etiam id viverra velit. Vivamus vel pharetra neque, et accumsan massa. Phasellus eu molestie ligula. Vestibulum velit est, vestibulum vitae egestas a, ullamcorper rutrum est. Vestibulum laoreet suscipit ex, nec finibus risus sollicitudin et. Aenean varius erat quis nibh fermentum aliquet. Phasellus ultrices, nisl eget porttitor malesuada, enim lorem commodo massa, at vehicula nisl eros sit amet augue. Sed sagittis tincidunt magna, et fermentum ante consectetur quis. Etiam a elit urna. Nulla tincidunt vehicula laoreet. Quisque finibus eleifend sem, ut dictum lorem feugiat at.',
-    question: 'Do I get any incentive to run a hot spot?',
+      'Basic code interface knowledge will be ideal, but we will provide hands-on support.',
+    question: 'How technical does a host need to be?',
   },
   {
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lectus est, pretium sit amet condimentum eu, egestas eget tellus. Nulla facilisi. Aliquam euismod mauris non dui sagittis viverra. Nunc feugiat pellentesque viverra. Vestibulum sollicitudin pulvinar tempus. Etiam id viverra velit. Vivamus vel pharetra neque, et accumsan massa. Phasellus eu molestie ligula. Vestibulum velit est, vestibulum vitae egestas a, ullamcorper rutrum est. Vestibulum laoreet suscipit ex, nec finibus risus sollicitudin et. Aenean varius erat quis nibh fermentum aliquet. Phasellus ultrices, nisl eget porttitor malesuada, enim lorem commodo massa, at vehicula nisl eros sit amet augue. Sed sagittis tincidunt magna, et fermentum ante consectetur quis. Etiam a elit urna. Nulla tincidunt vehicula laoreet. Quisque finibus eleifend sem, ut dictum lorem feugiat at.',
-    question: 'Do I get any incentive to run a hot spot?',
+      'WiFi is designed to be short-range, cellurlar allows this technology to expansion to be much more stable and quicker.',
+    question: 'Why do we work on cellular network instead of WiFi?',
   },
 ];
 

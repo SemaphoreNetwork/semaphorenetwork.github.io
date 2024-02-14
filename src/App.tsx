@@ -110,7 +110,7 @@ function App() {
           </div>
         ))}
       </div>
-      <div className='bg-sn-yellow-400 h-[600px] md:h-[435px] px-4'>
+      <div className='bg-sn-yellow-400 md:h-[435px] px-4 py-4 md:py-0'>
         <div className='flex flex-col md:flex-row h-full items-center justify-center max-w-[1440px] mx-auto'>
           <div className='max-w-[656px]'>
             <div className='text-sn-h3-sm md:text-sn-h3-lg'>

@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8dd010ad.css",
+    "main.js": "/static/js/main.2b089b06.js",
+    "static/js/787.e0ee1374.chunk.js": "/static/js/787.e0ee1374.chunk.js",
+    "static/media/hero-image.svg": "/static/media/hero-image.592a3651bd0277c5619a092866a08ddd.svg",
+    "static/media/sphere.svg": "/static/media/sphere.154918334cd89f1db274e96917394862.svg",
+    "static/media/cube.svg": "/static/media/cube.0cdcdd958999a0a81e3a0adb305885e4.svg",
+    "static/media/logo.svg": "/static/media/logo.72c8c0061b931c524654e583f27092ea.svg",
+    "static/media/half-sphere.svg": "/static/media/half-sphere.ea57a4254b3de7e97d1ad2cce05489f7.svg",
+    "static/media/halo.svg": "/static/media/halo.f7025f82b12c5c4e666bb4ae1ffbc7cc.svg",
+    "static/media/discord.svg": "/static/media/discord.206df40fc4d77261a43fbdb3cf6d12d9.svg",
+    "static/media/discord-button-icon.svg": "/static/media/discord-button-icon.535ef2978aa8c6ae36d82db3a254ffe6.svg",
+    "static/media/discord-yellow.svg": "/static/media/discord-yellow.cbce6c2ae40f484e65250d3134d902ca.svg",
+    "static/media/github.svg": "/static/media/github.2e5bae0f9fb7dce07ede89a344326b95.svg",
+    "static/media/github-button-icon.svg": "/static/media/github-button-icon.04f4d74787169b9a2f066ae06406e384.svg",
+    "index.html": "/index.html",
+    "main.8dd010ad.css.map": "/static/css/main.8dd010ad.css.map",
+    "main.2b089b06.js.map": "/static/js/main.2b089b06.js.map",
+    "787.e0ee1374.chunk.js.map": "/static/js/787.e0ee1374.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8dd010ad.css",
+    "static/js/main.2b089b06.js"
+  ]
+}

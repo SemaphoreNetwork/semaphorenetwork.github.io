@@ -59,7 +59,7 @@ const FAQS = [
 
 function App() {
   return (
-    <div>
+    <div className='px-4'>
       <Header />
       <div className='relative my-40 px-4'>
         <div className='max-w-[906px]'>
